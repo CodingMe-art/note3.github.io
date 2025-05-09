@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+       <div class="form-control">
+        <div class="btn-close">
+            X
+        </div>
+          <h1 style="text-align: center;">Notification</h1>
+        <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A impedit atque maxime iste provident deleniti fuga animi hic, repudiandae dolorum error, perspiciatis inventore distinctio beatae. Nobis deleniti deserunt consequatur cupiditate.</p>
+        <img src="internet.jpeg" alt="">     
+    </div>
+    </div>
+
+    <button id="btn">
+        click
+    </button>
+
+
+    <script>
+        const container = document.querySelector('.container');
+        const btnPopup = document.querySelector('#btn');
+        const btnClose = document.querySelector('.btn-close');
+
+       btnPopup.onclick = function (){
+        container.style.visibility = 'visible';
+       } 
+    btnClose.onclick = function(){
+      container.style.visibility = 'hidden';
+    }
+
+    container.onclick = function(){
+      container.style.visibility = 'hidden';
+    }
+    </script>
+</body>
+</html>
